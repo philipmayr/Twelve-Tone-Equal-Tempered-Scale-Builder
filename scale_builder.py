@@ -15,15 +15,15 @@ def build_chromatic_scale(base_pitch_frequency, temperament):
     half_step_counter = 1
     octave_counter = -1
     
-    for i in range(100):
+    for i in range(99):
         if half_step_counter == 3:
             octave_counter += 1
         if half_step_counter == 12:
             starting_pitch_frequency *= 2
             half_step_counter = 0
         note_frequency = starting_pitch_frequency * pow(2, half_step_counter/12)
-        print(str(note_frequency) + ' - ' + str(notes[half_step_counter]) + str(octave_counter))
-        chromatic_scale.update({"": note_frequency})
+        # print(str(note_frequency) + ' - ' + str(notes[half_step_counter]) + str(octave_counter))
+        chromatic_scale.update({str(notes[half_step_counter]) + str(octave_counter): note_frequency})
         half_step_counter += 1
     
 build_chromatic_scale(440, 0)
