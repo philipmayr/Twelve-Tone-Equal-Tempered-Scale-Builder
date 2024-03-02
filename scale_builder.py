@@ -1,4 +1,4 @@
-def build_chromatic_scale(base_pitch_frequency, temperament):
+def build_12TET_chromatic_scale(base_pitch_frequency):
     starting_pitch_frequency = base_pitch_frequency / pow(2, 5)
     
     chromatic_scale = {
