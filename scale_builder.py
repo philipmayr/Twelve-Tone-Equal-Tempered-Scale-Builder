@@ -9,9 +9,8 @@ def build_12TET_chromatic_scale(base_pitch_frequency):
     notes = ['A', 'A♯/B♭', 'B', 'C', 'C♯/D♭', 'D', 'D♯/E♭', 'E', 'F', 'F♯/G♭', 'G', 'G♯/A♭']
         
     chromatic_scale.update({"A-1": starting_pitch_frequency})
-    chromatic_scale.update({"A♯-1": starting_pitch_frequency * pow(2, 1/12)})
-    
-    print(str(starting_pitch_frequency) + " - A-1")
+
+    # print(str(starting_pitch_frequency) + " - A-1")
     
     half_step_counter = 1
     octave_counter = -1
@@ -23,7 +22,7 @@ def build_12TET_chromatic_scale(base_pitch_frequency):
             starting_pitch_frequency *= 2
             half_step_counter = 0
         note_frequency = starting_pitch_frequency * pow(2, half_step_counter/12)
-        print(str(note_frequency) + ' - ' + str(notes[half_step_counter]) + str(octave_counter))
+        # print(str(note_frequency) + ' - ' + str(notes[half_step_counter]) + str(octave_counter))
         chromatic_scale.update({str(notes[half_step_counter]) + str(octave_counter): note_frequency})
         half_step_counter += 1
 
