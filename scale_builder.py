@@ -25,5 +25,7 @@ def build_chromatic_scale(base_pitch_frequency, temperament):
         # print(str(note_frequency) + ' - ' + str(notes[half_step_counter]) + str(octave_counter))
         chromatic_scale.update({str(notes[half_step_counter]) + str(octave_counter): note_frequency})
         half_step_counter += 1
+
+    return chromatic_scale
     
 build_chromatic_scale(440, 0)
