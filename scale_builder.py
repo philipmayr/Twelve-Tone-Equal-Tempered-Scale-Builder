@@ -26,5 +26,6 @@ def build_12TET_chromatic_scale(base_pitch_frequency):
         half_step_counter += 1
 
     return chromatic_scale
-    
-build_chromatic_scale(440, 0)
+
+# 440 Hz base pitch
+12TET_chromatic_scale = build_chromatic_scale(440)
