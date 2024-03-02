@@ -1,6 +1,5 @@
 def build_chromatic_scale(base_pitch_frequency, temperament):
     starting_pitch_frequency = base_pitch_frequency / pow(2, 5)
-    print(starting_pitch_frequency)
     
     chromatic_scale = {
             # Pitch Number (A-1): Frequency
