@@ -1,4 +1,4 @@
-def build_12TET_chromatic_scale(base_pitch_frequency):
+def build_12_TET_chromatic_scale(base_pitch_frequency):
     starting_pitch_frequency = base_pitch_frequency / pow(2, 5)
     
     chromatic_scale = {
@@ -7,13 +7,15 @@ def build_12TET_chromatic_scale(base_pitch_frequency):
         }
         
     notes = ['A', 'A♯/B♭', 'B', 'C', 'C♯/D♭', 'D', 'D♯/E♭', 'E', 'F', 'F♯/G♭', 'G', 'G♯/A♭']
-        
-    chromatic_scale.update({"A-1": starting_pitch_frequency})
 
-    # print(str(starting_pitch_frequency) + " - A-1")
-    
-    half_step_counter = 1
+    half_step_counter = 0
     octave_counter = -1
+    
+    chromatic_scale.update({str(notes[half_step_counter]) + str(octave_counter): starting_pitch_frequency})
+
+    half_step_counter = 1
+
+    # print(str(starting_pitch_frequency) + ' - ' + str(notes[half_step_counter]) + str(octave_counter))
     
     for i in range(99):
         if half_step_counter == 3:
@@ -29,4 +31,4 @@ def build_12TET_chromatic_scale(base_pitch_frequency):
     return chromatic_scale
 
 # 440 Hz base pitch
-twelve_tone_equal_tempered_chromatic_scale = build_12TET_chromatic_scale(432)
+twelve_tone_equal_tempered_chromatic_scale = build_12_TET_chromatic_scale(440)
