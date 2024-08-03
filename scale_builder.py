@@ -2,7 +2,7 @@ def build_12_TET_chromatic_scale(base_pitch_frequency):
     starting_pitch_frequency = base_pitch_frequency / pow(2, 5)
     
     chromatic_scale = {
-            # Pitch Number (A-1): Frequency
+            # Pitch Number (A-1): Frequency in Hertz
             "": ""
         }
         
