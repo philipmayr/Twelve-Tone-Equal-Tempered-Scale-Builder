@@ -16,7 +16,7 @@ def build_12_TET_chromatic_scale(base_pitch_frequency):
     
     half_step_counter = 1
     
-    for i in range(99):
+    for i in range(123):
         if half_step_counter == 3:
             octave_counter += 1
         if half_step_counter == 12:
