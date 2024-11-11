@@ -1,6 +1,7 @@
 def build_twelve_tone_equal_tempered_chromatic_scale(base_pitch_frequency)
     starting_pitch_frequency = base_pitch_frequency / (1 << 5)
-  
+
+    # Key-Value Dictionary of Tone Names with Octave Numbers as Keys for Frequencies in Hertz as Values
     chromatic_scale = {"" => 0.0}
   
     notes = ["A", "A♯/B♭", "B", "C", "C♯/D♭", "D", "D♯/E♭", "E", "F", "F♯/G♭", "G", "G♯/A♭"]
@@ -33,5 +34,6 @@ def build_twelve_tone_equal_tempered_chromatic_scale(base_pitch_frequency)
  
     return chromatic_scale
 end
- 
+
+# 440 Hz (Hertz) Base Pitch Frequency
 twelve_tone_equal_tempered_chromatic_scale = build_twelve_tone_equal_tempered_chromatic_scale(440)
