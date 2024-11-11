@@ -10,6 +10,8 @@ def build_twelve_tone_equal_tempered_chromatic_scale(base_pitch_frequency)
     octave_counter = -1
     
     chromatic_scale[notes[half_step_counter] + octave_counter.to_s] = starting_pitch_frequency
+
+    # puts notes[half_step_counter] + octave_counter.to_s + "     - " + starting_pitch_frequency.to_s
   
     half_step_counter += 1
   
