@@ -7,13 +7,13 @@ def build_twelve_tone_equal_tempered_chromatic_scale(base_pitch_frequency):
             '': ''
         }
         
-    notes = ['A', 'A♯/B♭', 'B', 'C', 'C♯/D♭', 'D', 'D♯/E♭', 'E', 'F', 'F♯/G♭', 'G', 'G♯/A♭']
+    notes = ['A', "A♯/B♭", 'B', 'C', "C♯/D♭", 'D', "D♯/E♭", 'E', 'F', "F♯/G♭", 'G', "G♯/A♭"]
     
     half_step_counter = 0
     octave_counter = -1
     
     chromatic_scale.update({notes[half_step_counter] + str(octave_counter): starting_pitch_frequency})
-    # print(notes[half_step_counter] + str(octave_counter) + '     - ' + str(starting_pitch_frequency))
+    # print(notes[half_step_counter] + str(octave_counter) + "     - " + str(starting_pitch_frequency))
     
     half_step_counter = 1
     
