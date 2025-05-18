@@ -1,14 +1,14 @@
 def build_twelve_tone_equal_tempered_chromatic_scale(base_pitch_frequency):
     starting_pitch_frequency = base_pitch_frequency / pow(2, 5)
-                
+    
     # Key-Value Pair Dictionary
     chromatic_scale = {
             # Tone Name and Octave Number (A-4) - Frequency in Hertz (440)
-            "": ""
+            '': ''
         }
         
     notes = ['A', 'A♯/B♭', 'B', 'C', 'C♯/D♭', 'D', 'D♯/E♭', 'E', 'F', 'F♯/G♭', 'G', 'G♯/A♭']
-
+    
     half_step_counter = 0
     octave_counter = -1
     
@@ -36,7 +36,7 @@ def build_twelve_tone_equal_tempered_chromatic_scale(base_pitch_frequency):
         print(" - " + str(note_frequency))
         
         half_step_counter += 1
-
+        
     return chromatic_scale
 
 # 440 Hz (Hertz) Base Pitch Frequency
